@@ -1,4 +1,0 @@
-<food>
-	<name>Pasta</name>
-	<sauce>
-</food>

@@ -1,5 +1,0 @@
-<menu>
-	<food>Warm Pancakes with Strawberries</food>
-	<price>3.99</price>
-	<description>Amazing pancakes with strawberries and whipped cream!</description>
-</menu>

@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>This <br>is a paragraph<br>that is intended to check line breaks.</p>
-
-</body>
-</html>
