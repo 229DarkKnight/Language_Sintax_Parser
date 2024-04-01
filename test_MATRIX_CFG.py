@@ -78,3 +78,12 @@ def test_MATRIX_CFG8():
     matrix_str8 = general_grammar.fix_str(matrix_str8)
     matrix_result8 = general_grammar.cyk_parse(matrix_str8, general_grammar.available_grammars['MATRIX'])
     assert matrix_result8 == False
+
+def test_MATRIX_CFG9():
+    general_grammar = Grammar()
+
+    # Test recursion
+    matrix_str9 = general_grammar.read_string_from_file('Matrix_Sample9.txt')
+    matrix_str9 = general_grammar.fix_str(matrix_str9)
+    matrix_result9 = general_grammar.cyk_parse(matrix_str9, general_grammar.available_grammars['MATRIX'])
+    assert matrix_result9 == True
