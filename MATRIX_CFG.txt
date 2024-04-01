@@ -2,7 +2,7 @@ S -> ConstDef FunctionDef Matrix Main | FunctionDef Matrix Main | ConstDef Matri
 ConstDef -> ConstDef ConstDef | Constant Space Initialize Endline | None
 Constant -> Aletter Gletter Eletter Nletter Tletter
 FunctionDef -> FunctionDef FunctionDef | FuncProto FuncContent | None
-FuncProto -> Funcdef Parenthesis Space Input Space Parenthesis Endline
+FuncProto -> Funcdef L Space Parenthesis Space Input Space Parenthesis Endline
 FuncContent -> Open Line Output Close | Open Line Close
 Input -> Input Input | L Separate | L
 Output -> Return Parenthesis Space L Space Parenthesis Endline
@@ -15,7 +15,7 @@ Line -> Line Line | LineContent Endline | None
 LineContent -> VarDef | Loop | Initialize | Update | FunctionCall | PrintFull | Conditional | SwitchFull
 PrintFull -> Print Parenthesis Space LinePrint Space Parenthesis
 LinePrint -> LinePrint Separate LinePrint | Quoteo L Quotec | L
-FunctionCall -> Funccall Parenthesis Space Input Space Parenthesis
+FunctionCall -> Funccall L Space Parenthesis Space Input Space Parenthesis
 VarDef -> Variable Space Initialize
 Variable -> Rletter Eletter Vletter Oletter Lletter Uletter Tletter Iletter Oletter Nletter
 Loop -> ForLoop SubContent | WhileLoop SubContent | ForLoop | WhileLoop
