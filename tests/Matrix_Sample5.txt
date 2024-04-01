@@ -1,0 +1,5 @@
+matrix
+^
+	tel_c960_inputju,inp,ma_c960_e101
+	prophecy_c960_(mua),noti_c960_e101
+$

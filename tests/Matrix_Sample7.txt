@@ -1,0 +1,14 @@
+matrix
+^
+	pills_c960_abc_c960
+	^
+		pill_1
+		^
+			a?1_e101
+		$
+		pill_2
+		^
+			b?3_e101
+		$
+	$_e101
+$

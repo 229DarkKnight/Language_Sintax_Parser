@@ -1,0 +1,7 @@
+<note>
+	<to>Darnell</to>
+	<from>Evelyn</from>
+	<heading>Party</heading>
+	<body>I am having a party to celebrate my birthday this Friday! You better be there!</body>
+	<PS>No need to bring a present.</PS>
+</note>

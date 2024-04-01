@@ -1,0 +1,7 @@
+matrix
+^
+	practice_c960_m?2_e101_n#?3_e101_f2b2b_c960_e101
+	^
+		a?b_e101
+	$_e101
+$

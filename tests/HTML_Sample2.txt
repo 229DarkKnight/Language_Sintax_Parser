@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h3>HTML Image Atempt</h3>
+		<p>Trying out HTML images.</p>
+		<img src="example.jpg" alt="example.com">
+	</body>
+</html>
