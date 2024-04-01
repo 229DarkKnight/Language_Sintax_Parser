@@ -1,0 +1,13 @@
+agent_constant1?543_e101
+telephone_func1_c960_a,b_c960_e101
+^
+	revolution_a?1_e101
+	revolution_b?2_e101
+	tel_func1_c960_a,b_c960_e101
+	choice_c960_b_c960_e101
+$
+
+matrix
+^
+	tel_func1_c960_5,3_c960_e101
+$
