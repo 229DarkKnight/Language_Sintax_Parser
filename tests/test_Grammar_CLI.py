@@ -24,18 +24,18 @@ def test_init_grammar():
 
 def test_read_string_from_file():
 
-    assert Grammar.read_string_from_file('XML_CFG.txt') is not None
-    assert Grammar.read_string_from_file('HTML_CFG.txt') is not None
-    assert Grammar.read_string_from_file('MATRIX_CFG.txt') is not None
-    assert Grammar.read_string_from_file('a.txt') is None
+    assert CFG.Grammar.read_string_from_file('XML_CFG.txt') is not None
+    assert CFG.Grammar.read_string_from_file('HTML_CFG.txt') is not None
+    assert CFG.Grammar.read_string_from_file('MATRIX_CFG.txt') is not None
+    assert CFG.Grammar.read_string_from_file('a.txt') is None
 
 def test_save_string_as_dict_def():
 
     general_grammar = CFG.Grammar()
-    assert Grammar.save_string_as_dict_def('XML_CFG.txt', 'XML', general_grammar.available_grammars) == True
-    assert Grammar.save_string_as_dict_def('HTML_CFG.txt', 'HTML', general_grammar.available_grammars) == True
-    assert Grammar.save_string_as_dict_def('MATRIX_CFG.txt', 'MATRIX', general_grammar.available_grammars) == True
-    assert Grammar.save_string_as_dict_def('a.txt', 'b', general_grammar.available_grammars) == False
+    assert CFG.Grammar.save_string_as_dict_def('XML_CFG.txt', 'XML', general_grammar.available_grammars) == True
+    assert CFG.Grammar.save_string_as_dict_def('HTML_CFG.txt', 'HTML', general_grammar.available_grammars) == True
+    assert CFG.Grammar.save_string_as_dict_def('MATRIX_CFG.txt', 'MATRIX', general_grammar.available_grammars) == True
+    assert CFG.Grammar.save_string_as_dict_def('a.txt', 'b', general_grammar.available_grammars) == False
 
 #def test_check_str():
  #   general_grammar = CFG.Grammar()
