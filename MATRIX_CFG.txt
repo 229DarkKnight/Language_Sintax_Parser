@@ -1,0 +1,107 @@
+S -> ConstDef FunctionDef Matrix Main | FunctionDef Matrix Main | ConstDef Matrix Main | Matrix Main
+ConstDef -> ConstDef ConstDef | Constant Space Initialize Endline | None
+Constant -> Aletter Gletter Eletter Nletter Tletter
+FunctionDef -> FunctionDef FunctionDef | FuncProto FuncContent | None
+FuncProto -> Funcdef Parenthesis Space Input Space Parenthesis Endline
+FuncContent -> Open Line Output Close | Open Line Close
+Input -> Input Input | L Separate | L
+Output -> Return Parenthesis Space L Space Parenthesis Endline
+Matrix -> Mletter Aletter Tletter Rletter Iletter Xletter
+Main -> Open Line Close | Open Close
+Open -> '^'
+Close -> '$'
+Endline -> Space Eletter Num1 Num0 Num1
+Line -> Line Line | LineContent Endline | None
+LineContent -> VarDef | Loop | Initialize | Update | FunctionCall | PrintFull | Conditional | SwitchFull
+PrintFull -> Print Parenthesis Space LinePrint Space Parenthesis
+LinePrint -> LinePrint Separate LinePrint | Quoteo L Quotec | L
+FunctionCall -> Funccall Parenthesis Space Input Space Parenthesis
+VarDef -> Variable Space Initialize
+Variable -> Rletter Eletter Vletter Oletter Lletter Uletter Tletter Iletter Oletter Nletter
+Loop -> ForLoop SubContent | WhileLoop SubContent | ForLoop | WhileLoop
+SubContent -> Open Line Close | Open Close | None
+ForLoop -> For Space Parenthesis Space ForContent Space Parenthesis Endline
+ForContent -> Initialize Endline Space Compare Endline Space Update
+WhileLoop -> While Space Parenthesis Space Compare Space Parenthesis Endline
+While -> Pletter Lletter Uletter Gletter Gletter Eletter Dletter
+For -> Pletter Rletter Aletter Cletter Tletter Iletter Cletter Eletter
+Initialize -> L Equal L | L Equal FunctionCall | L Equal Parenthesis Space Compare Space Parenthesis
+Compare -> L | L Comparator L | Not L
+Update -> L UpdateVal
+Parenthesis -> Cletter Num9 Num6 Num0
+Space -> '_'
+Quoteo -> '('
+Quotec -> ')' 
+Conditional -> IfFull
+IfFull -> IfFull IfFull | IfFull ElifFull | IfFull ElseFull | IfSt SubContent
+ElifFull -> ElifFull ElifFull | ElifFull ElseFull | ElifSt SubContent
+ElseFull -> Else SubContent
+IfSt -> If Parenthesis Space Compare Space Parenthesis Endline 
+ElifSt -> Elif Parenthesis Space Compare Space Parenthesis Endline 
+If -> Bletter Lletter Uletter Eletter Pletter Iletter Lletter Lletter Space
+Elif -> Pletter Uletter Rletter Pletter Lletter Eletter Pletter Iletter Lletter Lletter Space
+Else -> Rletter Eletter Dletter Pletter Iletter Lletter Lletter
+Operator -> Add | Subtract| Multiply | Divide | Modulo
+Comparator -> Equal Equal | Not Equal | Smaller | Greater | Smaller Equal | Greater Equal
+UpdateVal -> Add Add | Subtract Subtract | Operator Equal L  
+Equal -> '?'
+Not -> '#'
+Add -> Num2 Bletter
+Subtract -> Num2 Dletter
+Multiply -> Num2 Aletter
+Divide -> Num2 Fletter
+Modulo -> '!'
+Smaller -> Num3 Cletter
+Greater -> Num3 Eletter
+Funcdef -> Tletter Eletter Lletter Eletter Pletter Hletter Oletter Nletter Eletter Space
+Funccall -> Tletter Eletter Lletter Space
+Separate -> ','
+Return -> Cletter Hletter Oletter Iletter Cletter Eletter Space
+SwitchFull -> SwitchSt Open CaseSt Close
+SwitchSt -> Switch Parenthesis Space L Space Parenthesis
+CaseSt -> CaseSt CaseSt | Case L Open Line Close
+Switch -> Pletter Iletter Lletter Lletter Sletter Space
+Case -> Pletter Iletter Lletter Lletter Space
+Print -> Pletter Rletter Oletter Pletter Hletter Eletter Cletter Yletter Space
+L -> L L | None
+L -> ' ' | '.' | ',' | ';' | ':' | '!' | '?' | '"' | '/' | '\' | '#' | '&' 
+L -> 'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g' | 'h' | 'i' | 'j' | 'k' | 'l' | 'm' | 'n' | 'o' | 'p' | 'q' | 'r'
+L -> 's' | 't' | 'u' | 'v' | 'w' | 'x' | 'y' | 'z' | '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+L -> 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L' | 'M' | 'N' | 'O' | 'P' | 'Q' | 'R'
+L -> 'S' | 'T' | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z' | ''
+Num0 -> '0'
+Num1 -> '1'
+Num2 -> '2'
+Num3 -> '3'
+Num4 -> '4'
+Num5 -> '5'
+Num6 -> '6'
+Num7 -> '7'
+Num8 -> '8'
+Num9 -> '9'
+Aletter -> 'a'
+Bletter -> 'b'
+Cletter -> 'c'
+Dletter -> 'd'
+Eletter -> 'e'
+Fletter -> 'f'
+Gletter -> 'g'
+Hletter -> 'h'
+Iletter -> 'i'
+Jletter -> 'j'
+Kletter -> 'k'
+Lletter -> 'l'
+Mletter -> 'm'
+Nletter -> 'n'
+Oletter -> 'o'
+Pletter -> 'p'
+Qletter -> 'q'
+Rletter -> 'r'
+Sletter -> 's'
+Tletter -> 't'
+Uletter -> 'u'
+Vletter -> 'v'
+Wletter -> 'w'
+Xletter -> 'x'
+Yletter -> 'y'
+Zletter -> 'z'
