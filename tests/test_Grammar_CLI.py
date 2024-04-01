@@ -6,8 +6,8 @@
 
 import pytest
 
-from Source.CFG import Grammar
-from Source.CLI import CLI
+from CFG import Grammar
+from CLI import CLI
 
 def test_init_grammar():
     general_grammar = Grammar()
