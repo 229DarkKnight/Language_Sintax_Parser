@@ -1,5 +1,5 @@
 matrix
 ^
-	tel_c960_inputju,inp,ma_c960_e101
-	prophecy_c960_(mua),noti_c960_e101
+	tel_func1_c960_inputju,inp,ma_c960_e101
+	prophecy_c960_(Hello World!),noti_c960_e101
 $
