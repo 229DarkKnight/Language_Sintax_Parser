@@ -4,8 +4,8 @@
 
 # --> Pytest for Grammar and CLI Implementation
 
-from .. import Grammar
-from .. import CLI
+from Source import Grammar
+from Source import CLI
 
 import pytest
 
