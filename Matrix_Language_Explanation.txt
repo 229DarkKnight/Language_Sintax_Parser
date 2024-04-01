@@ -84,7 +84,7 @@ For the return statement, our language represents 'return' with 'choice'. This i
 
 A function definition may look like this:
 
-telephone_c960_a,b_c960_e101
+telephone_func1_c960_a,b_c960_e101
 ^
 	revolution_a?1_e101
 	choice_c960_b_c960_e101
@@ -95,7 +95,7 @@ It may look like this:
 
 matrix
 ^
-	tel_c960_inputju,inp,ma_c960_e101
+	tel_func1_c960_inputju,inp,ma_c960_e101
 $
 
 
@@ -119,7 +119,6 @@ matrix
 	$_e101
 $
 
-
 --> Printing:
 'print' is represented as 'prophecy'. This is a reference to the recurring theme of 'prophecies' in the Matrix movies, usually established by the Oracle.
 'prophecy' must be followed by Matrix parentheses. Inside the parentheses, strings to be printed must be included within Matrix quotation marks. 
@@ -138,8 +137,6 @@ In C, you would have something like #DEFINE const 9. In our Matrix language, you
 A constant assignment may look like this: 
 
 agent_constant1?543_e101
-
-
 
 --> Variables:
 To signal variable assignment, our language uses the keyword 'revolution'. This is a reference to 'The Matrix: Revolutions', the third Matrix movie.
