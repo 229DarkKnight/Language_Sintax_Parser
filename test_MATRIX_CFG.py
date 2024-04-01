@@ -16,6 +16,15 @@ def test_MATRIX_CFG1():
     matrix_result1 = general_grammar.cyk_parse(matrix_str1, general_grammar.available_grammars['MATRIX'])
     assert matrix_result1 == True
 
+def test_MATRIX_CFG2():
+    general_grammar = Grammar()
+
+    # Test function definitions
+    matrix_str2 = general_grammar.read_string_from_file('Matrix_Sample2.txt')
+    matrix_str2 = general_grammar.fix_str(matrix_str2)
+    matrix_result2 = general_grammar.cyk_parse(matrix_str2, general_grammar.available_grammars['MATRIX'])
+    assert matrix_result2 == True
+
 def test_MATRIX_CFG3():
     general_grammar = Grammar()
 
