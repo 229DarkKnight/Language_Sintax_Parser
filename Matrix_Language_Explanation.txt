@@ -1,0 +1,152 @@
+Programming Language based on The Matrix! 
+--> (which is cool because Neo was a programmer)
+
+All programs optionally start with constants & function definitions, but they must start with 'matrix'.
+'matrix' works like the '!doctype' of HTML, or the 'main' in C.
+
+The Matrix language uses the same {} logic as C, but uses '^' to open and '$' to close.
+As such, a Matrix file must contain 'matrix' must be followed by ^ [content] $.
+The language also has the same ';' logic as C, but uses 'e101' instead. This is a reference to Neo's apartment: 101.
+
+--> Common Symbols:
+In our Matrix language, common symbols are represented differently with the purpose of resembling encrypted text, or the green matrix-like text seen in the Matrix movies.
+
+Each parenthesis is represented with 'c960'. This is a reference to the Oracle's apartment: c960.
+For quotation marks, the language uses parentheses instead (open and close).
+The language does not use regular spaces (' ') in code (only valid in test that will be printed). 
+Instead, parentheses, variables, etc. must be separated with '_'. However, a Matrix program may use '\n' between commands for readability.
+
+Basic operators are represented as follows:
+= is ?
+== is ??
+!= is #?
++ is 2b (ascii code for + in hex)
+- is 2d (ascii code for - in hex)
+* is 2a (ascii code for * in hex)
+/ is 2f (ascii code for / in hex)
+< is 3c (ascii code for < in hex)
+> is 3e (ascii code for > in hex)
+<= is 3c?
+>= is 3e?
+% is !
+
+--> Conditionals:
+'if' is represented as 'bluepill'. 'elif' is represented as 'purplepill'. 'else' is represented as 'redpill'. 
+This is a reference to the famous red pill/blue pill scene from the first Matrix movie.
+
+A conditional may look like this: 
+
+matrix
+^
+	bluepill_c960_b_c960_e101
+	^
+		a?2_e101
+	$
+	purplepill_c960_a3cb_c960_e101
+	^
+	$
+	redpill
+	^
+	$_e101
+$
+
+--> Loops:
+'while' is represented as 'plugged'. This is a reference to the way the characters are 'plugged' to the Matrix and stay there until something specific happens.
+The while-loop follows the same structure of a while-loop in C.
+
+A while-loop may look like this:
+matrix
+^
+	plugged_c960_#g_c960_e101
+	^
+	$_e101
+$
+
+
+'for' is represented as 'practice' This is a reference to the way the characters are in 'practice' programs that emulate the Matrix, but they have more control.
+The for-loop follows the same structure of a for-loop in C.
+
+A for-loop may look like this:
+
+matrix
+^
+	practice_c960_m?2_e101_n#?3_e101_f2b2b_c960_e101
+	^
+		a?b_e101
+	$_e101
+$
+
+--> Functions:
+Just like in Python you have def func(), our Matrix language uses 'telephone' to represent 'def'. 
+This is a reference to the way the characters use telephones in the Matrix movies to transport (or 'jump') to a different context.
+The function parameters are placed within parentheses with no data type specification, separated by commas (with no spaces).
+For the return statement, our language represents 'return' with 'choice'. This is a reference to the recurring theme of 'choices' in the Matrix movies.
+
+A function definition may look like this:
+
+telephone_c960_a,b_c960_e101
+^
+	revolution_a?1_e101
+	choice_c960_b_c960_e101
+$
+
+A function call uses 'tel' before the function name to signal that it is a function call and not a function definition.
+It may look like this:
+
+matrix
+^
+	tel_c960_inputju,inp,ma_c960_e101
+$
+
+
+--> Switch:
+'switch' is represented as 'pills'. 'case' is represented as 'pill'. The Matrix case-statement follows the same structure of a switch-statement in C.
+
+A switch statement may look like this:
+
+matrix
+^
+	pills_c960_abc_c960
+	^
+		pill_1
+		^
+			a?1_e101
+		$
+		pill_2
+		^
+			b?3_e101
+		$
+	$_e101
+$
+
+
+--> Printing:
+'print' is represented as 'prophecy'. This is a reference to the recurring theme of 'prophecies' in the Matrix movies, usually established by the Oracle.
+'prophecy' must be followed by Matrix parentheses. Inside the parentheses, strings to be printed must be included within Matrix quotation marks. 
+No quotation marks are needed to print other types of data. Strings and other data types can be mixed inside a 'prophecy' using commas.
+
+A print may look like this:
+
+matrix
+^
+	prophecy_c960_(mua),noti_c960_e101
+$
+
+--> Constants:
+In C, you would have something like #DEFINE const 9. In our Matrix language, you would have 'agent' representing '#DEFINE'. 
+
+A constant assignment may look like this: 
+
+agent_constant1?543_e101
+
+
+
+--> Variables:
+To signal variable assignment, our language uses the keyword 'revolution'. This is a reference to 'The Matrix: Revolutions', the third Matrix movie.
+
+A variable assignment may look like this:
+
+matrix
+^
+	revolution_noti?123_e101
+$
