@@ -78,3 +78,75 @@ def test_HTML_CFG8():
     html_str8 = general_grammar.fix_str_html(html_str8)
     html_result8 = general_grammar.cyk_parse(html_str8, general_grammar.available_grammars['HTML'])
     assert html_result8 == False
+
+def test_HTML_CFG9():
+    general_grammar = Grammar()
+
+    # Test <div>
+    html_str9 = general_grammar.read_string_from_file('HTML_Sample9.txt')
+    html_str9 = general_grammar.fix_str_html(html_str9)
+    html_result9 = general_grammar.cyk_parse(html_str9, general_grammar.available_grammars['HTML'])
+    assert html_result9 == True
+
+def test_HTML_CFG10():
+    general_grammar = Grammar()
+
+    # Test <br>
+    html_str10 = general_grammar.read_string_from_file('HTML_Sample10.txt')
+    html_str10 = general_grammar.fix_str_html(html_str10)
+    html_result10 = general_grammar.cyk_parse(html_str10, general_grammar.available_grammars['HTML'])
+    assert html_result10 == True
+
+def test_HTML_CFG11():
+    general_grammar = Grammar()
+
+    # Test <strong>
+    html_str11 = general_grammar.read_string_from_file('HTML_Sample11.txt')
+    html_str11 = general_grammar.fix_str_html(html_str11)
+    html_result11 = general_grammar.cyk_parse(html_str11, general_grammar.available_grammars['HTML'])
+    assert html_result11 == True
+
+def test_HTML_CFG12():
+    general_grammar = Grammar()
+
+    # Test <span>
+    html_str12 = general_grammar.read_string_from_file('HTML_Sample12.txt')
+    html_str12 = general_grammar.fix_str_html(html_str12)
+    html_result12 = general_grammar.cyk_parse(html_str12, general_grammar.available_grammars['HTML'])
+    assert html_result12 == True
+
+def test_HTML_CFG13():
+    general_grammar = Grammar()
+
+    # Test <em>
+    html_str13 = general_grammar.read_string_from_file('HTML_Sample13.txt')
+    html_str13 = general_grammar.fix_str_html(html_str13)
+    html_result13 = general_grammar.cyk_parse(html_str13, general_grammar.available_grammars['HTML'])
+    assert html_result13 == True
+
+def test_HTML_CFG14():
+    general_grammar = Grammar()
+
+    # Test <hr>
+    html_str14 = general_grammar.read_string_from_file('HTML_Sample14.txt')
+    html_str14 = general_grammar.fix_str_html(html_str14)
+    html_result14 = general_grammar.cyk_parse(html_str14, general_grammar.available_grammars['HTML'])
+    assert html_result14 == True
+
+def test_HTML_CFG15():
+    general_grammar = Grammar()
+
+    # Test <form> and <input>
+    html_str15 = general_grammar.read_string_from_file('HTML_Sample15.txt')
+    html_str15 = general_grammar.fix_str_html(html_str15)
+    html_result15 = general_grammar.cyk_parse(html_str15, general_grammar.available_grammars['HTML'])
+    assert html_result15 == True
+
+def test_HTML_CFG16():
+    general_grammar = Grammar()
+
+    # Test <textarea>
+    html_str16 = general_grammar.read_string_from_file('HTML_Sample16.txt')
+    html_str16 = general_grammar.fix_str_html(html_str16)
+    html_result16 = general_grammar.cyk_parse(html_str16, general_grammar.available_grammars['HTML'])
+    assert html_result16 == True
