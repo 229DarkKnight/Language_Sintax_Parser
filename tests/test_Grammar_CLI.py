@@ -31,7 +31,7 @@ def test_read_string_from_file():
 
 def test_save_string_as_dict_def():
 
-    general_grammar = CFG.Grammar()
+    general_grammar = Grammar()
     assert Grammar.save_string_as_dict_def('XML_CFG.txt', 'XML', general_grammar.available_grammars) == True
     assert Grammar.save_string_as_dict_def('HTML_CFG.txt', 'HTML', general_grammar.available_grammars) == True
     assert Grammar.save_string_as_dict_def('MATRIX_CFG.txt', 'MATRIX', general_grammar.available_grammars) == True
