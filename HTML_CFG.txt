@@ -16,7 +16,7 @@ Bc -> Y Slash Bletter Oletter Dletter Yletter Z
 Inner1 -> To L Tc
 To -> Y Tletter Iletter Tletter Lletter Eletter Z		
 Tc -> Y Slash Tletter Iletter Tletter Lletter Eletter Z
-Inner2 -> Inner2 Inner2 | Heading | P | A | Img | Ul | Ol | Div | Textarea | Hr
+Inner2 -> Inner2 Inner2 | Heading | P | A | Img | Ul | Ol | Div | Textarea | Hr | Form
 Hr -> Y Hletter Rletter Z
 Heading -> H1o L H1c | H2o L H2c | H3o L H3c | H4o L H4c | H5o L H5c | H6o L H6c
 H1o -> Y Hletter Num1 Z
@@ -65,7 +65,7 @@ Txta3 -> Close Space Rletter Oletter Wletter Sletter Equal Close
 Txta4 -> Close Space Cletter Oletter Lletter Sletter Equal Close
 Txta5 -> Y Slash Tletter Eletter Xletter Tletter Aletter Rletter Eletter Aletter Z
 Span -> Spano L Z L Spanc
-Spano -> Y Sletter Pletter Aletter Nletter
+Spano -> Y Sletter Pletter Aletter Nletter 
 Spanc -> Y Slash Sletter Pletter Aletter Nletter Z
 Strong -> Strongo L Strongc
 Strongo -> Y Sletter Tletter Rletter Oletter Nletter Gletter Z
@@ -78,8 +78,8 @@ Inputo -> Y Iletter Nletter Pletter Uletter Tletter
 Form -> Formo L Formc
 Formo -> Y Fletter Oletter Rletter Mletter Z
 Formc -> Y Slash Fletter Oletter Rletter Mletter Z
-L -> L L | None | Span | Strong | Em | Input | Form
-L -> Y Bletter Rletter Z | ' ' | '.' | ',' | ';' | ':' | '!' | '?' | '"' | '/' | '\' | '#' | '&'
+L -> L L | None | Span | Strong | Em | Input
+L -> Y Bletter Rletter Z | ' ' | '.' | ',' | ';' | ':' | '!' | '?' | '"' | '/' | '\' | '#' | '&' | '<' | '>' | '='
 L -> 'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g' | 'h' | 'i' | 'j' | 'k' | 'l' | 'm' | 'n' | 'o' | 'p' | 'q' | 'r'
 L -> 's' | 't' | 'u' | 'v' | 'w' | 'x' | 'y' | 'z' | '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
 L -> 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L' | 'M' | 'N' | 'O' | 'P' | 'Q' | 'R'
