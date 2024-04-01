@@ -1,0 +1,7 @@
+<!doctype html>
+<html>
+	<body>
+		<p>This is some content in section 1.</p>
+		<hr>
+	</body>
+</html>

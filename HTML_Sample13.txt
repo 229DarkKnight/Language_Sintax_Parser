@@ -1,0 +1,6 @@
+<!doctype html>
+<html>
+	<body>
+		<p>This is a <em>highlighted</em> text within a paragraph.</p>
+	</body>
+</html>
