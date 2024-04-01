@@ -4,10 +4,10 @@
 
 # --> Pytest for Grammar and CLI Implementation
 
-from Source import Grammar
-from Source import CLI
-
 import pytest
+
+from Source.CFG import Grammar
+from Source.CLI import CLI
 
 def test_init_grammar():
     general_grammar = Grammar()
