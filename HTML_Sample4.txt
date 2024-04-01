@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An Ordered HTML List</h2>
+
+	<ol>
+ 		<li>Cheese</li>
+		<li>Strawberries</li>
+		<li>Milk</li>
+	</ol> 
+
+</body>
+</html>
+
